@@ -1,0 +1,13 @@
+{
+  "name": "go-dev-opinionated",
+  "version": "0.1.0",
+  "description": "Opinionated Go development plugin with fast feedback loops and breakpoint-first debugging.",
+  "author": {
+    "name": "Trivedi"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/trivedi/claude-go-plugin",
+  "repository": "https://github.com/trivedi/claude-go-plugin",
+  "commands": "./commands",
+  "skills": "./skills"
+}

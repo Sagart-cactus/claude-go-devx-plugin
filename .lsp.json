@@ -1,0 +1,8 @@
+{
+  "languages": {
+    "go": {
+      "command": "gopls",
+      "args": ["serve"]
+    }
+  }
+}
