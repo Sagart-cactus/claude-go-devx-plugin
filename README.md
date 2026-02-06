@@ -2,6 +2,30 @@
 
 Opinionated Claude plugin for Go development with a practical debug-and-feedback loop.
 
+## Installation
+
+Install directly from GitHub:
+
+```bash
+claude-code plugin install https://github.com/Sagart-cactus/claude-go-plugin
+```
+
+Or clone and install locally:
+
+```bash
+git clone https://github.com/Sagart-cactus/claude-go-plugin.git
+cd claude-go-plugin
+claude-code plugin install .
+```
+
+After installation, run the bootstrap script to install required Go tools:
+
+```bash
+./scripts/bootstrap-go-tools.sh
+```
+
+This installs: `gopls`, `goimports`, `golangci-lint`, `dlv`, `govulncheck`, `go-mod-outdated`, `benchstat`, `gosec`, and `goose`.
+
 ## What this plugin gives you
 - Fast targeted test loop for changed Go packages
 - Lint + vet guardrails

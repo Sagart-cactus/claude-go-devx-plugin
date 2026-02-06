@@ -5,7 +5,7 @@
     "description": "Opinionated plugins and workflows for Go development in Claude Code."
   },
   "owner": {
-    "name": "trivedi"
+    "name": "Sagart-cactus"
   },
   "plugins": [
     {
