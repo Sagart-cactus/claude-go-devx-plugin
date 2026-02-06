@@ -13,6 +13,12 @@ if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   exit 0
 fi
 
+# Validate git ref
+if ! git rev-parse --verify "$base_ref" >/dev/null 2>&1; then
+  echo "Error: Invalid git reference '$base_ref'" >&2
+  exit 1
+fi
+
 files=()
 while IFS= read -r file; do
   [[ -n "$file" ]] && files+=("$file")

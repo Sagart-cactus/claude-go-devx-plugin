@@ -17,8 +17,9 @@ if [[ "${#changed_go[@]}" -eq 0 ]]; then
   exit 0
 fi
 
-echo "[go-dev-opinionated] Go files changed. Recommended loop:"
+echo "[go] Go files changed. Recommended loop:"
 echo "  1) ./scripts/test-fast.sh"
 echo "  2) ./scripts/lint.sh"
 echo "  3) ./scripts/debug-test.sh <pkg> <regex>  # when a test fails"
+echo "  4) ./scripts/coverage-report.sh  # check test coverage"
 exit 0

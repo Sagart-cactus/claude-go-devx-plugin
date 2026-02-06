@@ -1,5 +1,5 @@
 {
-  "name": "go-dev-opinionated",
+  "name": "go",
   "version": "0.1.0",
   "description": "Opinionated Go development plugin with fast feedback loops and breakpoint-first debugging.",
   "author": {
@@ -9,5 +9,6 @@
   "homepage": "https://github.com/trivedi/claude-go-plugin",
   "repository": "https://github.com/trivedi/claude-go-plugin",
   "commands": "./commands",
-  "skills": "./skills"
+  "skills": "./skills",
+  "hooks": "./hooks/hooks.json"
 }

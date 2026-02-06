@@ -1,0 +1,16 @@
+# Coverage reports
+coverage.out
+*.coverprofile
+
+# Profiling data
+*.prof
+cpu.prof
+mem.prof
+
+# Benchmark results
+bench-*.txt
+
+# Migrations (if using local test databases)
+*.db
+*.sqlite
+*.sqlite3

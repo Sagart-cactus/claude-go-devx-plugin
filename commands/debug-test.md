@@ -4,6 +4,8 @@ argument-hint: <package> [test-regex]
 ---
 Run `${CLAUDE_PROJECT_DIR}/scripts/debug-test.sh ${ARGUMENTS}`.
 
+Example: `/go:debug-test ./internal/service '^TestReconcile$'`
+
 Before launching Delve, produce a short breakpoint plan:
 1. Entry breakpoint at the failing test or top-level function.
 2. Guard-condition breakpoint before expected/actual divergence.
@@ -13,4 +15,4 @@ During debugging:
 - Inspect locals, call stack, and goroutines.
 - State one hypothesis before each step/continue.
 - After confirming root cause, apply the smallest safe fix.
-- Re-run the exact test, then `/go-dev-opinionated:test-fast`.
+- Re-run the exact test, then `/go:test-fast`.

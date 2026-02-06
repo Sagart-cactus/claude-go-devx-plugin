@@ -1,6 +1,6 @@
 ---
 name: go-development-loop
-description: Opinionated Go development workflow with fast, standard, and full feedback loops.
+description: Follow fast feedback loops for Go development workflow
 ---
 
 # Go Development Loop
@@ -29,3 +29,27 @@ When failing:
 - Concurrency safety (races, deadlocks, goroutine leaks)
 - Error clarity and observability
 - Test quality and coverage of regression path
+
+## Extended Feedback Loops
+
+Beyond the fast → standard → full loop, use these workflows regularly:
+
+4. **Security loop**: `./scripts/security-scan.sh` + `./scripts/gosec-scan.sh`
+   - Run: weekly, before releases, after dependency updates
+   - Catches: vulnerabilities, code-level security issues
+
+5. **Performance loop**: `./scripts/bench-run.sh` + `./scripts/bench-profile.sh`
+   - Run: after optimization attempts, before releases
+   - Provides: statistical benchmarks, CPU/memory profiles
+
+6. **Dependency loop**: `./scripts/deps-check.sh`
+   - Run: weekly, after pulling changes, when adding dependencies
+   - Maintains: clean dependency tree, catches outdated packages
+
+7. **Coverage loop**: `./scripts/coverage-report.sh [threshold]`
+   - Run: during feature development, before PRs
+   - Enforces: quality gates, identifies untested code
+
+8. **Migration loop**: `./scripts/migrate.sh status` + `up/down`
+   - Run: when database schema changes
+   - Manages: versioned schema evolution

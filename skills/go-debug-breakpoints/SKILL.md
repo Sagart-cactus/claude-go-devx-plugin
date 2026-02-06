@@ -1,6 +1,6 @@
 ---
 name: go-debug-breakpoints
-description: Breakpoint-first Go debugging with Delve and structured hypothesis testing.
+description: Debug failing Go tests with Delve using breakpoint strategy
 ---
 
 # Go Breakpoint Debugging
