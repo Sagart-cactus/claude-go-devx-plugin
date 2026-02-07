@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.0] - 2026-02-07
+
+### Changed
+- **BREAKING:** Renamed marketplace from `go` to `sagart-devtools` for better future expansion
+- Updated marketplace description to be more general
+- Updated all documentation with new installation commands
+
+### Migration Guide
+
+Existing users need to update their marketplace:
+
+```bash
+# Remove old marketplace
+claude plugin marketplace remove go
+
+# Add new marketplace
+claude plugin marketplace add https://github.com/Sagart-cactus/claude-go-plugin
+
+# Reinstall plugin
+claude plugin install go@sagart-devtools
+```
+
 ## [0.1.1] - 2026-02-07
 
 ### Fixed
@@ -60,5 +82,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Skill descriptions shortened to under 70 characters for better triggering
 - CI pipeline now includes security scanning as Stage 4
 
+[0.2.0]: https://github.com/Sagart-cactus/claude-go-plugin/releases/tag/v0.2.0
 [0.1.1]: https://github.com/Sagart-cactus/claude-go-plugin/releases/tag/v0.1.1
 [0.1.0]: https://github.com/Sagart-cactus/claude-go-plugin/releases/tag/v0.1.0
