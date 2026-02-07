@@ -1,8 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace.json",
-  "name": "go",
+  "name": "sagart-devtools",
   "metadata": {
-    "description": "Opinionated plugins and workflows for Go development in Claude Code."
+    "description": "Developer productivity plugins and workflows by Sagart-cactus for Claude Code."
   },
   "owner": {
     "name": "Sagart-cactus"

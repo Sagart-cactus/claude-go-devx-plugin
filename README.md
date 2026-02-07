@@ -11,7 +11,7 @@ Opinionated Claude plugin for Go development with a practical debug-and-feedback
 claude plugin marketplace add https://github.com/Sagart-cactus/claude-go-plugin
 
 # Install the plugin
-claude plugin install go@go
+claude plugin install go@sagart-devtools
 ```
 
 ### Option 2: Install from local clone
@@ -23,7 +23,7 @@ cd claude-go-plugin
 
 # Add as marketplace and install
 claude plugin marketplace add .
-claude plugin install go@go
+claude plugin install go@sagart-devtools
 ```
 
 ### Post-Installation
@@ -45,7 +45,7 @@ claude plugin list
 
 You should see:
 ```
-✔ go@go
+✔ go@sagart-devtools
   Version: 0.1.1
   Status: ✔ enabled
 ```
@@ -60,7 +60,7 @@ claude plugin marketplace update go
 
 # Reinstall the plugin
 claude plugin uninstall go
-claude plugin install go@go
+claude plugin install go@sagart-devtools
 ```
 
 ## What this plugin gives you
